@@ -2,10 +2,10 @@ import React from 'react';
 import { motion } from 'framer-motion';
 export default function Hero() {
   return (
-    <section className="px-10 pt-10 pb-4">
+    <section className="px-4 md:px-10 pt-6 md:pt-10 pb-4">
       <div className="max-w-[1280px] mx-auto relative rounded-2xl overflow-hidden shadow-2xl bg-slate-800">
         {/* Image — taller aspect to match reference */}
-        <div className="aspect-[16/9] md:aspect-[16/8] w-full">
+        <div className="aspect-[4/5] sm:aspect-[16/9] md:aspect-[16/8] w-full">
           <img 
             src="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?q=80&w=2070&auto=format&fit=crop"
             alt="Shipping containers at golden hour"
@@ -23,9 +23,9 @@ export default function Hero() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ amount: 0.2 }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
-          className="absolute top-16 md:top-20 left-8 md:left-10"
+          className="absolute top-8 sm:top-16 md:top-20 left-6 sm:left-8 md:left-10"
         >
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-normal text-white leading-[1.1] tracking-tight">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-normal text-white leading-[1.1] tracking-tight">
             Global Freight.<br />Done Right.
           </h1>
         </motion.div>
@@ -36,7 +36,7 @@ export default function Hero() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ amount: 0.2 }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.5 }}
-          className="absolute bottom-8 md:bottom-10 left-8 md:left-10"
+          className="absolute bottom-6 sm:bottom-8 md:bottom-10 left-6 sm:left-8 md:left-10"
         >
           <p className="text-sm text-white/90 leading-relaxed max-w-[260px] mb-4">
             Reliable, fast, and cost-effective solutions<br />for all <span className="font-semibold">your cargo needs.</span>
@@ -55,7 +55,7 @@ export default function Hero() {
           viewport={{ amount: 0.2 }}
           transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1], delay: 0.6 }}
           whileHover={{ scale: 1.1 }}
-          className="absolute bottom-8 md:bottom-10 right-8 md:right-10 w-12 h-12 rounded-full bg-white flex items-center justify-center text-black transition-shadow hover:shadow-lg"
+          className="absolute bottom-6 sm:bottom-8 md:bottom-10 right-6 sm:right-8 md:right-10 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white flex items-center justify-center text-black transition-shadow hover:shadow-lg"
         >
           <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />

@@ -16,16 +16,16 @@ export default function ScrollRevealText() {
   const words = text.split(" ");
 
   return (
-    <section className="px-10 pb-4">
+    <section className="px-4 md:px-10 pb-4">
       <div 
         ref={containerRef} 
-        className="max-w-[1280px] mx-auto bg-white rounded-2xl py-24 md:py-32 relative overflow-hidden"
+        className="max-w-[1280px] mx-auto bg-white rounded-2xl py-16 sm:py-24 md:py-32 relative overflow-hidden"
       >
         
-        <div className="max-w-[1100px] mx-auto px-8 md:px-12 flex flex-col md:flex-row items-center gap-12 relative z-10">
+        <div className="max-w-[1100px] mx-auto px-6 sm:px-8 md:px-12 flex flex-col md:flex-row items-center gap-12 relative z-10">
           {/* Left: Text */}
           <div className="md:w-1/2">
-            <h2 className="text-4xl md:text-5xl font-normal leading-[1.2] tracking-tight flex flex-wrap gap-x-3 gap-y-1">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-normal leading-[1.2] tracking-tight flex flex-wrap gap-x-3 gap-y-1">
               {words.map((word, i) => {
                 const start = i / words.length;
                 const end = start + (1 / words.length);
@@ -49,9 +49,9 @@ export default function ScrollRevealText() {
           {/* Right: SVG container slides right-to-left */}
           <motion.div 
             style={{ x: svgX }}
-            className="md:w-1/2 flex justify-center"
+            className="md:w-1/2 flex justify-center w-full px-4 md:px-0"
           >
-            <svg width="420" height="260" viewBox="0 0 420 260" fill="none" stroke="black" strokeWidth="2" strokeLinejoin="round">
+            <svg className="w-full max-w-[420px] h-auto" viewBox="0 0 420 260" fill="none" stroke="black" strokeWidth="2" strokeLinejoin="round">
               {/* Container Outline */}
               <rect x="10" y="10" width="400" height="240" rx="3" />
               {/* Top edge detail */}

@@ -30,7 +30,7 @@ function Counter({ to, duration = 1.5, suffix = "", prefix = "", colorClass = "t
 
 export default function StatsGrid() {
   return (
-    <section className="px-10 pb-4">
+    <section className="px-4 md:px-10 pb-4">
       <motion.div 
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -41,7 +41,7 @@ export default function StatsGrid() {
         <div className="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-slate-200 border-b border-slate-200">
           
           {/* Top Left */}
-          <div className="p-12 md:p-16 flex flex-col items-start justify-center">
+          <div className="p-8 sm:p-12 md:p-16 flex flex-col items-start justify-center">
             <div className="border border-slate-200 text-slate-800 px-3 py-1.5 rounded-full text-xs font-medium uppercase tracking-wide mb-6">
               Key Metrics
             </div>
@@ -54,7 +54,7 @@ export default function StatsGrid() {
           </div>
 
           {/* Top Right */}
-          <div className="p-12 md:p-16 flex flex-col justify-center">
+          <div className="p-8 sm:p-12 md:p-16 flex flex-col justify-center">
             <div className="mb-2">
               <Counter to={1.5} suffix=" million" />
             </div>
@@ -66,7 +66,7 @@ export default function StatsGrid() {
         <div className="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-slate-200">
           
           {/* Bottom Left */}
-          <div className="p-12 md:p-16 flex flex-col justify-center">
+          <div className="p-8 sm:p-12 md:p-16 flex flex-col justify-center">
             <div className="mb-2">
               <Counter to={99} suffix="%" colorClass="text-slate-400" />
             </div>
@@ -74,7 +74,7 @@ export default function StatsGrid() {
           </div>
 
           {/* Bottom Right */}
-          <div className="p-12 md:p-16 flex flex-col justify-center">
+          <div className="p-8 sm:p-12 md:p-16 flex flex-col justify-center">
             <div className="mb-2">
               <Counter to={100} suffix="+" />
             </div>

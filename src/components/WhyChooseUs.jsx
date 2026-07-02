@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 
 export default function WhyChooseUs() {
   return (
-    <section className="px-10 pb-4">
-      <div className="max-w-[1280px] mx-auto bg-white rounded-2xl p-10 md:p-14 relative overflow-hidden">
+    <section className="px-4 md:px-10 pb-4">
+      <div className="max-w-[1280px] mx-auto bg-white rounded-2xl p-6 sm:p-10 md:p-14 relative overflow-hidden">
         
         {/* Top row: badge left, thumbnails right */}
         <div className="flex flex-col md:flex-row justify-between items-start gap-8 mb-16">
@@ -22,7 +22,7 @@ export default function WhyChooseUs() {
               transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
               src="https://images.unsplash.com/photo-1540962351504-03099e0a754b?q=80&w=2070&auto=format&fit=crop"
               alt="Cargo plane"
-              className="w-[160px] h-[140px] object-cover rounded-2xl"
+              className="w-[120px] sm:w-[160px] h-[100px] sm:h-[140px] object-cover rounded-2xl"
             />
             <motion.img 
               initial={{ opacity: 0, y: 20 }}
@@ -31,7 +31,7 @@ export default function WhyChooseUs() {
               transition={{ duration: 0.6, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
               src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?q=80&w=2075&auto=format&fit=crop"
               alt="Port cranes"
-              className="w-[160px] h-[140px] object-cover rounded-2xl"
+              className="w-[120px] sm:w-[160px] h-[100px] sm:h-[140px] object-cover rounded-2xl"
             />
           </div>
         </div>

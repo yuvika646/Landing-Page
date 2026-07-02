@@ -3,12 +3,12 @@ import { motion } from 'framer-motion';
 
 export default function EfficiencyInAction() {
   return (
-    <section className="px-10 pb-4 overflow-hidden">
+    <section className="px-4 md:px-10 pb-4 overflow-hidden">
       <div className="max-w-[1280px] mx-auto">
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
           {/* Left Card */}
-          <div className="bg-[#F4F4F5] rounded-2xl p-8 md:p-12 flex flex-col min-h-[500px]">
+          <div className="bg-[#F4F4F5] rounded-2xl p-6 sm:p-8 md:p-12 flex flex-col min-h-[500px]">
             <div className="border border-slate-200 text-slate-900 bg-white px-4 py-2 rounded-full text-xs font-medium tracking-wide inline-flex self-start mb-10">
               Efficiency in Action
             </div>
@@ -19,7 +19,7 @@ export default function EfficiencyInAction() {
                 <span className="text-slate-400">global network, ensuring reliable and efficient delivery.</span>
               </h3>
               
-              <button className="hidden md:flex shrink-0 items-center justify-center gap-2 bg-orange-500 text-white px-6 py-3 rounded-full font-medium text-sm hover:bg-orange-600 transition-colors">
+              <button className="mt-4 md:mt-0 shrink-0 items-center justify-center gap-2 bg-orange-500 text-white px-6 py-3 rounded-full font-medium text-sm hover:bg-orange-600 transition-colors flex">
                 Learn More
                 <span>→</span>
               </button>
@@ -52,7 +52,7 @@ export default function EfficiencyInAction() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ amount: 0.3 }}
               transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-              className="bg-white rounded-2xl p-6 md:p-8 flex-1 border border-slate-100"
+              className="bg-white rounded-2xl p-4 sm:p-6 md:p-8 flex-1 border border-slate-100"
             >
               {/* Header */}
               <div className="flex items-center gap-3 mb-6">
@@ -123,7 +123,7 @@ export default function EfficiencyInAction() {
         </div>
 
         {/* Logos Section */}
-        <div className="mt-6 bg-white rounded-2xl px-10 py-8">
+        <div className="mt-6 bg-white rounded-2xl px-6 md:px-10 py-6 md:py-8">
           <p className="text-sm font-normal text-slate-600 mb-6">
             These logos represent our commitment to quality and reliability across industries.
           </p>

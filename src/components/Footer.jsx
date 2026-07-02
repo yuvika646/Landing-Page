@@ -32,8 +32,8 @@ const footerLinks = [
 
 export default function Footer() {
   return (
-    <footer className="px-10 pb-10">
-      <div className="max-w-[1280px] mx-auto bg-[#0B0E14] rounded-2xl px-10 md:px-16 pt-14 pb-0 text-white overflow-hidden relative">
+    <footer className="px-4 md:px-10 pb-4 md:pb-10">
+      <div className="max-w-[1280px] mx-auto bg-[#0B0E14] rounded-2xl px-6 sm:px-10 md:px-16 pt-10 md:pt-14 pb-0 text-white overflow-hidden relative">
         
         {/* Top Row */}
         <motion.div 
@@ -62,7 +62,7 @@ export default function Footer() {
           transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
           className="flex flex-col lg:flex-row lg:items-end justify-between gap-12 mb-16 pb-14 border-b border-white/10"
         >
-          <h2 className="text-5xl md:text-6xl font-normal tracking-tight leading-[1.15] max-w-md">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-normal tracking-tight leading-[1.15] max-w-md">
             Ready to Ship with Confidence?
           </h2>
         </motion.div>

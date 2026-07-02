@@ -36,8 +36,8 @@ export default function ShippingCarousel() {
   }, []);
 
   return (
-    <section className="px-10 pb-4">
-      <div className="max-w-[1280px] mx-auto bg-white rounded-2xl p-10 md:p-16 text-center">
+    <section className="px-4 md:px-10 pb-4">
+      <div className="max-w-[1280px] mx-auto bg-white rounded-2xl p-6 sm:p-10 md:p-16 text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -54,7 +54,7 @@ export default function ShippingCarousel() {
         </motion.div>
 
         <div className="relative h-[420px] w-full flex flex-col items-center justify-start mt-4">
-          <div className="relative w-[380px] h-[280px]">
+          <div className="relative w-full max-w-[380px] h-[280px]">
             <AnimatePresence mode="popLayout">
               {CARDS.map((card, idx) => {
                 let offset = idx - activeIndex;
