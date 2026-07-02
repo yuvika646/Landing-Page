@@ -20,7 +20,8 @@ export default function Hero() {
         {/* Top-left heading */}
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ amount: 0.2 }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
           className="absolute top-16 md:top-20 left-8 md:left-10"
         >
@@ -32,7 +33,8 @@ export default function Hero() {
         {/* Bottom-left caption + indicator bars */}
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ amount: 0.2 }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.5 }}
           className="absolute bottom-8 md:bottom-10 left-8 md:left-10"
         >
@@ -49,7 +51,8 @@ export default function Hero() {
         {/* Bottom-right arrow button */}
         <motion.button
           initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ amount: 0.2 }}
           transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1], delay: 0.6 }}
           whileHover={{ scale: 1.1 }}
           className="absolute bottom-8 md:bottom-10 right-8 md:right-10 w-12 h-12 rounded-full bg-white flex items-center justify-center text-black transition-shadow hover:shadow-lg"

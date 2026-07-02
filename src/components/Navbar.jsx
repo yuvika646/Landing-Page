@@ -54,7 +54,7 @@ export default function Navbar() {
         <div className="flex items-center gap-2">
           <span className="w-2.5 h-2.5 rounded-full bg-orange-500"></span>
           <span className={`text-base font-medium tracking-tight ${scrolled ? 'text-slate-900' : 'text-white'}`}>
-            SwiftContainers
+            Apex Logistics
           </span>
         </div>
 
@@ -65,7 +65,7 @@ export default function Navbar() {
               key={link.name} 
               href="#"
               className={`flex items-center gap-1.5 text-sm font-normal transition-colors ${
-                scrolled ? 'text-gray-600 hover:text-slate-900' : 'text-white/80 hover:text-white'
+                scrolled ? 'text-gray-600 hover:text-orange-500' : 'text-white/80 hover:text-orange-500'
               }`}
             >
               {link.icon}

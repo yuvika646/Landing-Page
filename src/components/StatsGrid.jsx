@@ -3,7 +3,7 @@ import { motion, useInView, animate } from 'framer-motion';
 
 function Counter({ to, duration = 1.5, suffix = "", prefix = "", colorClass = "text-black" }) {
   const nodeRef = useRef(null);
-  const isInView = useInView(nodeRef, { once: true, amount: 0.3 });
+  const isInView = useInView(nodeRef, { amount: 0.3 });
 
   useEffect(() => {
     const node = nodeRef.current;
@@ -34,7 +34,7 @@ export default function StatsGrid() {
       <motion.div 
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.2 }}
+        viewport={{ amount: 0.2 }}
         transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
         className="max-w-[1280px] mx-auto bg-white rounded-2xl overflow-hidden"
       >

@@ -50,7 +50,7 @@ export default function EfficiencyInAction() {
             <motion.div 
               initial={{ opacity: 0, x: 80 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, amount: 0.3 }}
+              viewport={{ amount: 0.3 }}
               transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
               className="bg-white rounded-2xl p-6 md:p-8 flex-1 border border-slate-100"
             >
@@ -106,7 +106,7 @@ export default function EfficiencyInAction() {
                         <motion.div 
                           initial={{ height: 0 }}
                           whileInView={{ height: `${val}%` }}
-                          viewport={{ once: true }}
+                          viewport={{ amount: 0 }}
                           transition={{ duration: 1, delay: i * 0.08, ease: [0.16, 1, 0.3, 1] }}
                           className={`w-4 md:w-6 rounded-t-md ${isOrange ? 'bg-orange-500' : 'bg-slate-800'}`}
                         />

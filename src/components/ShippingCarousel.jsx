@@ -38,13 +38,20 @@ export default function ShippingCarousel() {
   return (
     <section className="px-10 pb-4">
       <div className="max-w-[1280px] mx-auto bg-white rounded-2xl p-10 md:p-16 text-center">
-        <h2 className="text-3xl md:text-4xl font-normal tracking-tight mb-3 leading-tight">
-          <span className="text-black block">Explore our flexible shipping options</span>
-          <span className="text-slate-400 block">for every need in the world</span>
-        </h2>
-        <p className="text-slate-500 text-sm max-w-md mx-auto mb-14">
-          Whether across land, air, or sea, we provide tailored logistics to ensure your cargo reaches its destination safely and on time.
-        </p>
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ amount: 0.3 }}
+          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+        >
+          <h2 className="text-3xl md:text-4xl font-normal tracking-tight mb-3 leading-tight">
+            <span className="text-black block">Explore our flexible shipping options</span>
+            <span className="text-slate-400 block">for every need in the world</span>
+          </h2>
+          <p className="text-slate-500 text-sm max-w-md mx-auto mb-14">
+            Whether across land, air, or sea, we provide tailored logistics to ensure your cargo reaches its destination safely and on time.
+          </p>
+        </motion.div>
 
         <div className="relative h-[420px] w-full flex flex-col items-center justify-start mt-4">
           <div className="relative w-[380px] h-[280px]">

@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const footerLinks = [
   { name: 'Home', icon: (
@@ -35,7 +36,13 @@ export default function Footer() {
       <div className="max-w-[1280px] mx-auto bg-[#0B0E14] rounded-2xl px-10 md:px-16 pt-14 pb-0 text-white overflow-hidden relative">
         
         {/* Top Row */}
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-16">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ amount: 0.2 }}
+          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+          className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-16"
+        >
           <div className="flex items-center gap-2 border border-white/20 bg-white/5 px-5 py-2.5 rounded-full text-sm font-medium text-white">
             <span>📍</span> 
             <span className="text-white/60">Search Location</span>
@@ -45,62 +52,62 @@ export default function Footer() {
             Request A Quote 
             <span className="text-lg">→</span>
           </button>
-        </div>
+        </motion.div>
 
         {/* Heading & Nav Links */}
-        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-12 mb-16 pb-14 border-b border-white/10">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ amount: 0.2 }}
+          transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+          className="flex flex-col lg:flex-row lg:items-end justify-between gap-12 mb-16 pb-14 border-b border-white/10"
+        >
           <h2 className="text-5xl md:text-6xl font-normal tracking-tight leading-[1.15] max-w-md">
             Ready to Ship with Confidence?
           </h2>
-          <div className="flex flex-wrap items-center gap-6 text-white/70 text-sm">
-            {footerLinks.map((link) => (
-              <a 
-                key={link.name} 
-                href="#" 
-                className="flex items-center gap-1.5 hover:text-white transition-colors"
-              >
-                {link.icon}
-                {link.name}
-              </a>
-            ))}
-          </div>
-        </div>
+        </motion.div>
 
         {/* 3-Column Contact Block */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-32 relative z-10">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ amount: 0.2 }}
+          transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+          className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-32 relative z-10"
+        >
           <div>
             <h4 className="text-white/60 font-medium text-sm mb-5">Head office</h4>
             <p className="text-white/40 text-sm leading-relaxed">
-              SchnellTransport AG<br />
-              Frachtweg 15<br />
-              10115 Berlin<br />
-              Deutschland
+              Apex Logistics<br />
+              123 Logistics Way<br />
+              New York, NY 10001<br />
+              USA
             </p>
           </div>
           <div>
             <h4 className="text-white/60 font-medium text-sm mb-5">Postal & Visitor address</h4>
             <p className="text-white/40 text-sm leading-relaxed">
-              SchnellTransport AG<br />
-              Frachtweg 15<br />
-              10115 Berlin<br />
-              Deutschland
+              Apex Logistics<br />
+              123 Logistics Way<br />
+              New York, NY 10001<br />
+              USA
             </p>
           </div>
           <div>
             <div className="mb-6">
               <h4 className="text-white/60 font-medium text-sm mb-3">Email</h4>
-              <a href="mailto:info@swiftcontainers.com" className="block text-white text-xl md:text-2xl font-normal hover:text-white/80 transition-colors tracking-tight">
-                info@swiftcontainers.com
+              <a href="mailto:info@apexlogistics.com" className="block text-white text-xl md:text-2xl font-normal hover:text-white/80 transition-colors tracking-tight">
+                info@apexlogistics.com
               </a>
             </div>
             <div>
               <h4 className="text-white/60 font-medium text-sm mb-3">Phone</h4>
-              <a href="tel:+4922520899" className="block text-white text-xl md:text-2xl font-normal hover:text-white/80 transition-colors tracking-tight">
-                +49 22 520 899
+              <a href="tel:+12125550199" className="block text-white text-xl md:text-2xl font-normal hover:text-white/80 transition-colors tracking-tight">
+                +1 (212) 555-0199
               </a>
             </div>
           </div>
-        </div>
+        </motion.div>
 
 
 
